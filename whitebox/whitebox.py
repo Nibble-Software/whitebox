@@ -27,7 +27,7 @@ def _run_code_with_tests(code: str, tests: str) -> unittest.TestResult:
     # Step 3: Run the tests
     loader = unittest.TestLoader()
     tests = loader.loadTestsFromModule(test_module)
-    test_runner = unittest.TextTestRunner(verbosity=0, stream=_EmptyStream())
+    test_runner = unittest.TextTestRunner(verbosity=0, stream=_EmptyStream()) # noqa
     test_result = test_runner.run(tests)
     # Return results, this could be customized further
     return test_result
