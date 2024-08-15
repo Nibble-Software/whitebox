@@ -2,7 +2,10 @@
 name = "whitebox"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Marcelo de Jesús Núñez <chelo154@gmail.com>"]
+packages = [
+    { include = "whitebox", from = "."},
+]
 readme = "README.md"
 
 [tool.poetry.dependencies]
