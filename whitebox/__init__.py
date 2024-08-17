@@ -1,1 +1,1 @@
-from whitebox.whitebox import whitebox
+from whitebox.whitebox import whitebox, WhiteBoxResult
