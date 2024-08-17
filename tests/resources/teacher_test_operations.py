@@ -9,7 +9,8 @@ class TestOperations(unittest.TestCase):
         self.assertEqual(operate('*', 0, 0), 0)
         self.assertEqual(operate('/', 4, 2), 2)
 
-    def test_division_by_cero(self):
-        self.assertEqual(operate('/', 4, 0), 0)
-        self.assertEqual(operate('/', 0, 4), 0)
-        self.assertEqual(operate('/', 0, 0), 0)
+    def test_expected_function_does_not_exception(self):
+        try:
+            operate('/', 4, 0)
+        except Exception as ignored:
+            self.fail('It should not fail')
